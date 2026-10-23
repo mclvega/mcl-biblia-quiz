@@ -130,6 +130,9 @@ h1 {
 .btn[aria-pressed='true'] { background: var(--primary); color: var(--primary-text); border-color: var(--primary); }
 
 .fila-botones { display: flex; flex-wrap: wrap; gap: 0.6rem; }
+/* Jugar sin conexión (ui/sinconexion.ts). */
+.opcion-config { display: grid; gap: 0.5rem; text-align: left; padding-top: 0.6rem; border-top: 1px solid var(--border); }
+.ayuda-texto { margin: 0; font-size: 0.9em; color: var(--text-2); }
 .fila-botones > .btn { flex: 1 1 10rem; }
 
 .barra-progreso { font-weight: 700; color: var(--text-2); }

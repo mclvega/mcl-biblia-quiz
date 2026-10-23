@@ -6,6 +6,7 @@ import { CATEGORIAS, type Categoria } from '../content/quiz';
 import { entrarPantallaCompleta, salirPantallaCompleta } from '../fullscreen';
 import type { Configuracion } from '../storage';
 import { boton, h } from './dom';
+import { opcionesSinConexion } from './sinconexion';
 
 const CANTIDADES: Cantidad[] = [10, 15, 20, 'ilimitada'];
 const TEMAS: Configuracion['tema'][] = ['claro', 'oscuro', 'auto'];
@@ -82,6 +83,7 @@ export function pantallaConfiguracion(): Pantalla {
         botonTema,
         botonPantalla,
       ),
+      opcionesSinConexion(),
     ),
   );
   return { el };

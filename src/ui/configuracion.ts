@@ -1,4 +1,4 @@
-import { app, type Pantalla } from '../app';
+﻿import { app, type Pantalla } from '../app';
 import { audio } from '../audio';
 import { DIFICULTADES, nombreDificultad, type Dificultad } from '../core/difficulty';
 import { crearPartida, type Cantidad } from '../core/partida';
@@ -7,6 +7,8 @@ import { entrarPantallaCompleta, salirPantallaCompleta } from '../fullscreen';
 import type { Configuracion } from '../storage';
 import { boton, h } from './dom';
 import { opcionesSinConexion } from './sinconexion';
+
+declare const __VERSION__: string;
 
 const CANTIDADES: Cantidad[] = [10, 15, 20, 'ilimitada'];
 const TEMAS: Configuracion['tema'][] = ['claro', 'oscuro', 'auto'];
@@ -84,6 +86,7 @@ export function pantallaConfiguracion(): Pantalla {
         botonPantalla,
       ),
       opcionesSinConexion(),
+      h('p', { class: 'texto-suave', text: `Quiz Bíblico · versión ${__VERSION__}` }),
     ),
   );
   return { el };

@@ -1,4 +1,4 @@
-﻿import { app, type Pantalla } from '../app';
+import { app, type Pantalla } from '../app';
 import { audio } from '../audio';
 import { DIFICULTADES, nombreDificultad, type Dificultad } from '../core/difficulty';
 import { crearPartida, type Cantidad } from '../core/partida';

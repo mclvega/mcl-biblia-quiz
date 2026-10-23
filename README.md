@@ -7,6 +7,7 @@ Juego de trivia sobre la Biblia (Reina Valera 1960), pensado para móvil, con di
 ```bash
 npm install
 npm run dev
+npm test     # banco de preguntas, partidas y guardado
 ```
 
 Abre `http://localhost:5173`. En VS Code también puedes presionar **F5** (configuración "Quiz Bíblico: jugar en local (Chrome)" en `.vscode/launch.json`).
